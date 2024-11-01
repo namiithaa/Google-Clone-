@@ -1,0 +1,13 @@
+// script.js
+function search() {
+  const query = document.getElementById("search-box").value;
+  if (query) {
+    window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, "_blank");
+  } else {
+    alert("Please enter a search term.");
+  }
+}
+
+function feelingLucky() {
+  window.open("https://www.google.com/doodles", "_blank");
+}
